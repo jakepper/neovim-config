@@ -1,6 +1,6 @@
 -- options.lua
 
-vim.opt.guicursor = ""
+vim.opt.guicursor = "n-v-c:block,i:ver25"
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
