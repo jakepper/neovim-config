@@ -2,7 +2,7 @@
 
 ## Plugins
 
-- `Lazy` : plugin Manager
+- `lazy` : plugin Manager
 - `telescope` : fuzzy finder
 - `treesitter` : code parser (syntax highlighting, incremental selection, etc.)
 - `lsp-zero`
@@ -13,3 +13,15 @@
 - `undotree` : vim undo branch visualization and navigation
 - `fugitive` : git integration
 - `rose-pine` : color scheme
+
+## Setup
+
+Requires Neovim `0.9.x` or later
+
+  `cd ~/.config/`
+
+  `git clone git@github.com:jakepper/neovim-config.git`
+
+  `mv neovim-config nvim`
+
+  `nvim ./nvim`
