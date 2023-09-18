@@ -1,5 +1,7 @@
 -- lsp.lua
 
+
+
 local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
@@ -53,6 +55,24 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ["<C-y>"] = cmp.mapping.complete(),
 })
 
+local luasnip = require "luasnip"
+luasnip.filetype_extend("typescript", { "tsdoc" })
+luasnip.filetype_extend("javascript", { "jsdoc" })
+luasnip.filetype_extend("lua", { "luadoc" })
+luasnip.filetype_extend("python", { "pydoc" })
+luasnip.filetype_extend("rust", { "rustdoc" })
+luasnip.filetype_extend("cs", { "csharpdoc" })
+luasnip.filetype_extend("java", { "javadoc" })
+luasnip.filetype_extend("c", { "cdoc" })
+luasnip.filetype_extend("cpp", { "cppdoc" })
+luasnip.filetype_extend("php", { "phpdoc" })
+luasnip.filetype_extend("kotlin", { "kdoc" })
+luasnip.filetype_extend("ruby", { "rdoc" })
+luasnip.filetype_extend("sh", { "shelldoc" })
+luasnip.filetype_extend("javascriptreact", { "javascript" })
+luasnip.filetype_extend("typescriptreact", { "typescript" })
+luasnip.filetype_extend("javascriptreact", { "html" })
+luasnip.filetype_extend("typescriptreact", { "html" })
 require('luasnip.loaders.from_vscode').lazy_load()
 
 cmp.setup({
