@@ -1,3 +1,5 @@
 -- init.lua
 
-require("config")
+require("config.options")
+require("config.remaps")
+require("lazy_init")

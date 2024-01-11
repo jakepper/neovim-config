@@ -1,3 +1,4 @@
+-- lua/config/remaps.lua
 
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
@@ -11,8 +12,23 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
--- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("n", "x", '"x')
+
+vim.keymap.set("n", "<leader>+", "<C-a>")
+vim.keymap.set("n", "<leader>-", "<C-x>")
+
+-- splits
+vim.keymap.set("n", "<leader>sv", "<C-w>v")  -- split vertically
+vim.keymap.set("n", "<leader>sh", "<C-w>s")  -- split horizontally
+vim.keymap.set("n", "<leader>se", "<C-w>=")  -- equal spacing
+vim.keymap.set("n", "<leader>sx", ":close<CR>")  -- close focused split
+
+-- tabs
+vim.keymap.set("n", "<leader>to", ":tabnew<CR>") -- open tab
+vim.keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close tab
+vim.keymap.set("n", "<leader>tn", ":tabn<CR>") -- next tab
+vim.keymap.set("n", "<leader>tp", ":tabp<CR>") -- previous tab
 
 -- next greatest remap ever : asbjornHaland
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
