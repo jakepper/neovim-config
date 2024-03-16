@@ -38,6 +38,6 @@ return {
          },
       })
 
-      -- vim.keymap.set("n", "<leader>pv", ":NvimTreeToggle<CR>")
+      vim.keymap.set("n", "<leader>pv", ":NvimTreeToggle<CR>")
    end
 }
